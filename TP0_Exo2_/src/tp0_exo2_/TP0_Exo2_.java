@@ -3,33 +3,34 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package tp0_exo2_;
-
+import java.util.Scanner;
 /**
  *
- * @author lenovo
+ * @author Laure
  */
 public class TP0_Exo2_ {
 
     /**
-     * @param args the command line arguments
+     * MINARDI Laure
+     * 21/09/2024
      */
-    public static void main(String[] args) {
-       public static void main(String[] args) {
-//Declaration des variables
-int nb; // nombre dentiers a additionner
-int result; // resultat
-int ind; //indice
-nb=5;
-result=0;
-// Addition des nb premiers entiers
-ind=1;
-while (ind <= nb) {
-result=result+ind;
+     public static void main(String[] args) {
+        int nb;
+        int result;     
+        Scanner sc = new Scanner (System.in);
+        System.out.println("\nEntrer le nombre : ");
+        nb = sc.nextInt();      
+        int ind;
+        
+        result = 0;
+        
+        ind  = 1;
+        while (ind <= nb){
+ 
+            result = result+ind;
+            ind = ind + 1;
+        }
+        System.out.println();
+        System.out.println("La somme des " + nb + "entiers est: " +result);
 }
-// Affichage du resultat
-System.out.println();
-System.out.println("La somme des "+ nb + "entiers est: "+result);
-}
-    }
-    
 }
